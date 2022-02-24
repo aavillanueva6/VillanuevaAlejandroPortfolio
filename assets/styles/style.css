@@ -1,4 +1,28 @@
+/* Styling is designed for mobile first */
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: navy;
 }
+
+
+
+
+/* Add Media Queries for Tablet and Desktop formatting */
+/* Tablets / devices with width greater than 768px */
+@media screen and (min-width: 768px) {
+/* This \/ block is added in to make it easy to test that the Media Query is working for this device type */
+    * {
+      color: red;
+    }
+  }
+/* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+
+
+/* Desktops / devices with width greater than 992px */
+@media screen and (min-width: 992px) {
+/* This \/ block is added in to make it easy to test that the Media Query is working for this device type */    
+    * {
+      color: green;
+    }
+/* This ^ block is added in to make it easy to test that the Media Query is working for this device type */    
+  }
