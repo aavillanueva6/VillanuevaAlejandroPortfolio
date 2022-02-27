@@ -1,28 +1,166 @@
-/* Styling is designed for mobile first */
+/* Styling is designed for desktop first */
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: navy;
+    margin: 0px;
+}
+
+.sansSerif {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.sectionTitle {
+  font-size: 150%;
+  text-align: right;
+  padding:5px;
+}
+
+body {
+  margin: 0px;
+}
+
+.headerBar {
+  display:flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color:grey;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  background-color: grey;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.AV {
+  text-align: right;
+  font-size: 175%;
+  padding:15px;
+}
+
+.bodyGroup {
+  display: flex;
+  margin: 5px;
+}
+
+.AboutMeText {
+  display: block;
+  color: black;
+}
+
+.bodyGroup aside {
+  flex: 0 0 150px;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color:navy;
+  margin:5px;
+}
+
+.bodyGroup section {
+  flex: 4 1 200px;
+}
+
+#previousProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: centers;
+}
+
+#previousProjects a {
+  /* width:150px; */
+  min-height:150px;
+  flex: 1 1 150px;
+  padding:20px;
+  border-width: 20px;
+  margin: 20px;
+  border-style:groove;
 }
 
 
 
+#previousProjects img {
+  width: 100%;
+  min-width: 150px;
+  object-fit: cover;
+  max-height:fit-content;
 
-/* Add Media Queries for Tablet and Desktop formatting */
-/* Tablets / devices with width greater than 768px */
-@media screen and (min-width: 768px) {
-/* This \/ block is added in to make it easy to test that the Media Query is working for this device type */
-    * {
-      color: red;
-    }
-  }
-/* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+}
+
+/* #pinnedProject {
+  max-width: 150px;
+} */
+
+footer {
+  display:block;
+  background-color: red;
+  text-align: center;
+  width: auto;
+}
+
+footer p {
+  margin: auto;
+}
+
+#previousProjects:first-child {
+  border-style:dashed !important;
+}
+
+#ContactList li {
+  display: inline;
+  margin: 0 5px;
+}
 
 
-/* Desktops / devices with width greater than 992px */
-@media screen and (min-width: 992px) {
+/* Add Media Queries for phone and tablet formatting */
+/* tablets / devices with width less than 992px */
+@media screen and (max-width: 992px) {
 /* This \/ block is added in to make it easy to test that the Media Query is working for this device type */    
     * {
       color: green;
     }
 /* This ^ block is added in to make it easy to test that the Media Query is working for this device type */    
   }
+
+/* phones / devices with width less than 768px */
+@media screen and (max-width: 768px) {
+  /* This \/ block is added in to make it easy to test that the Media Query is working for this device type */
+      * {
+        color: red;
+      }
+      
+      body section {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .bodyGroup aside {
+        flex: 0 0;
+        border-right-width: 0px;
+        border-right-style: none;
+        border-right-color:navy;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color:navy;
+        margin:5px;
+        
+      }
+
+      .sectionTitle {
+        width:100%;
+        text-align: center;
+      }
+
+    }
+
+  /* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+    
