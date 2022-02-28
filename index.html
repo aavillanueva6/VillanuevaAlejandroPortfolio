@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <header class="headerBar">
-        <!-- Header contains site main title -->
-        <h1>Portfolio</h1>
-        <nav>
-            <a href="#AboutMe">About Me</a>
-            <a href="#Work">Work</a>
-            <a href="#ContactMe">Contact Me</a>
-            <a href="./assets/files/VillanuevaAlejandroResume.pdf">Resume</a>
-        </nav>
+    <header class="entireHeaderSection">
+        <section class="headerBar">
+            <!-- Header contains site main title -->
+            <h1 class="mainHeaderText">Portfolio</h1>
+            <nav>
+                <a href="#AboutMe">About Me</a>
+                <a href="#Work">Work</a>
+                <a href="#ContactMe">Contact Me</a>
+                <a href="./assets/files/VillanuevaAlejandroResume.pdf">Resume</a>
+            </nav>
+        </section>
+        <section>
+            <h2 class="AV">Alejandro Villanueva</h2>
+        </section>
     </header>
-
-    <section>
-        <h2 class="AV">Alejandro Villanueva</h2>
-    </section>
-
+    
     <section class="bodyGroup" id="AboutMe">
         <aside>
             <h2 class="sectionTitle">About Me</h2>
@@ -37,23 +38,59 @@
         <aside>
             <h2 class="sectionTitle">Work</h2>
         </aside>
-        <!-- placeholder images from https://www.fillmurray.com/ -->
+        <!-- placeholder images of Bill Murray from https://www.fillmurray.com/ -->
         <section id="previousProjects">
-            <a id="pinnedProject" href="./assets/files/Placeholder1.pdf" target="_blank" rel="noopener noreferrer"><img src="./assets/images/300x300.jpg" alt="300x300 image of Bill Murray">Placeholder1</a>
-            <a href="./assets/files/Placeholder2.pdf" target="_blank" rel="noopener noreferrer"><img src="./assets/images/350x300.jpg" alt="350x300 image of Bill Murray">Placeholder2</a>
-            <a href="./assets/files/Placeholder3.pdf" target="_blank" rel="noopener noreferrer"><img src="./assets/images/250x200.jpg" alt="250x200 image of Bill Murray">Placeholder3</a>
-            <a href="./assets/files/Placeholder4.pdf" target="_blank" rel="noopener noreferrer"><img src="./assets/images/400x450.jpg" alt="400x450 image of Bill Murray">Placeholder4</a>
-            <a href="./assets/files/Placeholder5.pdf" target="_blank" rel="noopener noreferrer"><img src="./assets/images/800x600.jpg" alt="800x600 image of Bill Murray">Placeholder5</a>
+            <section class="projectBucket">
+                <a class="projectCard" href="./assets/files/Placeholder1.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/1200x600.jpg" alt="image of Bill Murray">
+                    <span class="linkText">
+                        <span class="projectText projectName">ProjectName1</span>
+                        <span class="projectText projectDesc">ProjectDescription1</span>
+                    </span>
+                </a>
+            </section>
+            <section class="projectBucket">
+                <a class="projectCard" href="./assets/files/Placeholder2.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                    <span class="linkText">
+                        <span class="projectText projectName">ProjectName2</span>
+                        <span class="projectText projectDesc">ProjectDescription2</span>
+                    </span>
+                </a>
+                <a class="projectCard" href="./assets/files/Placeholder3.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                    <span class="linkText">
+                        <span class="projectText projectName">ProjectName3</span>
+                        <span class="projectText projectDesc">ProjectDescription3</span>
+                    </span>
+                </a>
+            </section>
+            <section class="projectBucket">
+                <a class="projectCard" href="./assets/files/Placeholder4.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                    <span class="linkText">
+                        <span class="projectText projectName">ProjectName4</span>
+                        <span class="projectText projectDesc">ProjectDescription4</span>
+                    </span>
+                </a>
+                <a class="projectCard" href="./assets/files/Placeholder5.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                    <span class="linkText">
+                        <span class="projectText projectName">ProjectName5</span>
+                        <span class="projectText projectDesc">ProjectDescription5</span>
+                    </span>
+                </a>
+            </section>
         </section>
     </section>
     <section class="bodyGroup" id="ContactMe">
         <aside>
             <h2 class="sectionTitle">Contact Me</h2>
         </aside>
-        <section>
-            <ul id="ContactList">
+        <section class="contactSection">
+            <ul id="contactList">
                 <li>
-                    123-456-7890
+                    <a href="tel:+1234567890">123.456.7890</a>
                 </li>
                 <li>
                     <a href="mailto:aavillanueva6@gmail.com">aavillanueva6@gmail.com</a>

@@ -1,8 +1,8 @@
 /* Styling is designed for desktop first */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: navy;
-    margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: navy;
+  margin: 0px;
 }
 
 .sansSerif {
@@ -17,6 +17,7 @@
 
 body {
   margin: 0px;
+  background-color: #b4bbc3;
 }
 
 .headerBar {
@@ -24,14 +25,17 @@ body {
   justify-content: space-between;
 }
 
+.mainHeaderText {
+  font-size: 300%;
+  font-weight: bold;
+}
+
 header {
-  background-color:grey;
-  padding: 20px;
+  padding: 10px 10px 0px 10px;
 }
 
 nav {
   display: flex;
-  background-color: grey;
   justify-content: flex-end;
 }
 
@@ -44,7 +48,18 @@ nav a {
 .AV {
   text-align: right;
   font-size: 175%;
-  padding:15px;
+  padding:61px 30px;
+  background-image: url(../images/ProfilePic3.jpg);
+  background-repeat: no-repeat;
+  background-position:5px center;
+  background-size: 140px;
+}
+.entireHeaderSection {
+  background-image: url(../images/banner-5190177_960_720.jpg);
+  /* background image from https://pixabay.com/illustrations/banner-metal-metallic-steel-shiny-5190177/ */
+  background-repeat: no-repeat;
+  background-position:0px center;
+  background-size:cover;
 }
 
 .bodyGroup {
@@ -55,6 +70,7 @@ nav a {
 .AboutMeText {
   display: block;
   color: black;
+  margin: 1em 5px;
 }
 
 .bodyGroup aside {
@@ -66,79 +82,130 @@ nav a {
 }
 
 .bodyGroup section {
-  flex: 4 1 200px;
+  flex: 4 1;
 }
 
 #previousProjects {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow:column wrap;
   justify-content: space-evenly;
-  align-items: centers;
+  align-items: center;
 }
 
-#previousProjects a {
-  /* width:150px; */
-  min-height:150px;
+
+
+.projectBucket {
+  display: flex;
+  justify-content:center;
+  align-content:stretch;
+
+}
+
+.projectCard {
+  position: relative;
+  margin: 5px;
+}
+
+.projectCard img {
   flex: 1 1 150px;
-  padding:20px;
-  border-width: 20px;
-  margin: 20px;
-  border-style:groove;
+  width:100%;
+  transition: 0.75s ease;
+  border-radius: 5px;
+}
+
+.projectCard:hover img{
+  box-shadow: 0 0 10px navy;
+  opacity: .75;
+  z-index: 3;
+
+}
+
+.projectCard:hover .linkText{
+  z-index: 3;
+  background-color:whitesmoke;
+}
+
+.projectCard:hover .projectText{
+  color: black;
+}
+
+.linkText {
+  position: absolute;
+  bottom:25%;
+  background-color: black;
+  padding: 5px;
+  display:block;
+  transition: 0.75s ease;
+}
+
+.projectText {
+  color: whitesmoke;
+  display: block;
+  transition: 0.75s ease;
+}
+
+.projectName {
+  font-size:larger;
+  font-weight:bolder;
+}
+
+.projectDesc {
+  font-style: italic;
+  font-weight:lighter;
 }
 
 
 
-#previousProjects img {
-  width: 100%;
-  min-width: 150px;
-  object-fit: cover;
-  max-height:fit-content;
 
-}
 
-/* #pinnedProject {
-  max-width: 150px;
-} */
+
+
+
 
 footer {
   display:block;
-  background-color: red;
+  background-color: #b4bbc3;
   text-align: center;
   width: auto;
+  padding: 0 0 10px 0;
 }
 
 footer p {
   margin: auto;
 }
 
-#previousProjects:first-child {
-  border-style:dashed !important;
+#contactList {
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.contactSection {
+  align-self: center;
 }
 
-#ContactList li {
-  display: inline;
-  margin: 0 5px;
-}
 
 
 /* Add Media Queries for phone and tablet formatting */
 /* tablets / devices with width less than 992px */
 @media screen and (max-width: 992px) {
 /* This \/ block is added in to make it easy to test that the Media Query is working for this device type */    
-    * {
+    /* * {
       color: green;
-    }
+    } */
 /* This ^ block is added in to make it easy to test that the Media Query is working for this device type */    
+
+
+  
   }
 
 /* phones / devices with width less than 768px */
 @media screen and (max-width: 768px) {
-  /* This \/ block is added in to make it easy to test that the Media Query is working for this device type */
-      * {
+      /* This \/ block is added in to make it easy to test that the Media Query is working for this device type */
+      /* * {
         color: red;
-      }
-      
-      body section {
+      } */
+      /* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+      .bodyGroup {
         flex-direction: column;
         align-items: stretch;
       }
@@ -154,13 +221,33 @@ footer p {
         margin:5px;
         
       }
+      
+      .bodyGroup section {
+        flex: 1 1 ;
+      }
 
       .sectionTitle {
         width:100%;
         text-align: center;
       }
 
+      .projectBucket {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-content:stretch;
+      
+      }
+
+      .contactSection {
+        align-self: stretch;
+      }
+
+      footer {
+        padding: 10px 0 15px 0;
+      }
+
     }
 
-  /* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+  
     
