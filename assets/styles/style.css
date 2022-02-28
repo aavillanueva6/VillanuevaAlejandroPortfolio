@@ -208,7 +208,6 @@ footer p {
       /* This ^block is added in to make it easy to test that the Media Query is working for this device type */
       .mainHeaderText {
         font-size:200%;
-        text-overflow: ;
       }
       
       nav {
