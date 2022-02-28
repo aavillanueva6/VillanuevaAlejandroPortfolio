@@ -179,6 +179,7 @@ footer p {
   display:flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin:5px;
 }
 .contactSection {
   align-self: center;
@@ -206,6 +207,11 @@ footer p {
         color: red;
       } */
       /* This ^block is added in to make it easy to test that the Media Query is working for this device type */
+      
+      .entireHeaderSection {
+        padding: 10px;
+      }
+
       .mainHeaderText {
         font-size:200%;
       }
@@ -218,6 +224,7 @@ footer p {
         padding: 26px 5px 26px 100px;
         background-size: 90px;
         font-size:150%;
+        background-position: 0px center;
       }
 
       .bodyGroup {
