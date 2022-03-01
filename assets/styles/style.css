@@ -1,7 +1,13 @@
 /* Styling is designed for desktop first */
+:root {
+  --darkColor:navy;
+  --lightColor: #b4bbc3;
+
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
-  color: navy;
+  color: var(--darkColor);
   margin: 0px;
 }
 
@@ -53,6 +59,7 @@ nav a {
   background-repeat: no-repeat;
   background-position:5px center;
   background-size: 140px;
+
 }
 .entireHeaderSection {
   background-image: url(../images/banner-5190177_960_720.jpg);
@@ -69,7 +76,7 @@ nav a {
 
 .AboutMeText {
   display: block;
-  color: black;
+  color: var(--darkColor);
   margin: 1em 5px;
 }
 
@@ -77,7 +84,7 @@ nav a {
   flex: 0 0 150px;
   border-right-width: 5px;
   border-right-style: solid;
-  border-right-color:navy;
+  border-right-color:var(--darkColor);
   margin:5px;
 }
 
@@ -98,12 +105,17 @@ nav a {
   display: flex;
   justify-content:center;
   align-content:stretch;
-
+  flex-wrap:wrap;
 }
 
 .projectCard {
   position: relative;
   margin: 5px;
+  flex:1 1 40%;
+}
+
+.pinnedProject {
+  flex:1 1 80%;
 }
 
 .projectCard img {
@@ -114,7 +126,7 @@ nav a {
 }
 
 .projectCard:hover img{
-  box-shadow: 0 0 10px navy;
+  box-shadow: 0 0 10px var(--darkColor);
   opacity: .75;
   z-index: 3;
 
@@ -122,24 +134,24 @@ nav a {
 
 .projectCard:hover .linkText{
   z-index: 3;
-  background-color:whitesmoke;
+  background-color:var(--lightColor);
 }
 
 .projectCard:hover .projectText{
-  color: black;
+  color: var(--darkColor);
 }
 
 .linkText {
   position: absolute;
   bottom:25%;
-  background-color: black;
+  background-color: var(--darkColor);
   padding: 5px;
   display:block;
   transition: 0.75s ease;
 }
 
 .projectText {
-  color: whitesmoke;
+  color: var(--lightColor);
   display: block;
   transition: 0.75s ease;
 }
@@ -218,8 +230,18 @@ footer p {
       
       nav {
         flex-wrap: wrap;
+        justify-content: flex-end;
+        text-align: left;
       }
       
+      nav a{
+        flex: 0 1 33%;
+      }
+
+      nav a:nth-child(even) {
+        text-align: right;
+      }
+
       .AV {
         padding: 26px 5px 26px 100px;
         background-size: 90px;
@@ -236,10 +258,10 @@ footer p {
         flex: 0 0;
         border-right-width: 0px;
         border-right-style: none;
-        border-right-color:navy;
+        border-right-color:var(--darkColor);
         border-bottom-width: 5px;
         border-bottom-style: solid;
-        border-bottom-color:navy;
+        border-bottom-color:var(--darkColor);
         margin:5px;
         
       }
@@ -249,7 +271,7 @@ footer p {
       }
 
       .sectionTitle {
-        width:100%;
+        width:inherit;
         text-align: center;
       }
 
@@ -268,15 +290,22 @@ footer p {
       #contactList {
         flex-wrap:wrap;
       }
-
+      
+      #contactList li:nth-child(even) {
+       text-align: right;
+      }
+      
       #contactList li {
         padding: 2px;
         margin: 5px;
+        flex: 0 1 33%;
       }
 
       footer {
         padding: 0 0 0.5em 0;
       }
+
+      
 
     }
 
