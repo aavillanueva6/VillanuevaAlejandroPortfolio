@@ -7,7 +7,7 @@
     <title>Alejandro Villanueva's Portfolio</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.svg">
     <link rel="manifest" href="/site.webmanifest">
@@ -16,103 +16,121 @@
     -->
 </head>
 <body>
-    <header class="entireHeaderSection">
+    <header class="entireHeaderSection sansSerif">
+        <!-- the .entireHeaderSection contains all of the header sections.  A background image is applied to this class in the style.css to have it be distinct -->
         <section class="headerBar">
-            <!-- Header contains site main title -->
+            <!-- the .headerBar contains site main title and navigation links to sections in this site, as well as a resume -->
             <h1 class="mainHeaderText">Portfolio</h1>
             <nav>
                 <a href="#AboutMe">About Me</a>
                 <a href="#Work">Work</a>
                 <a href="#ContactMe">Contact Me</a>
                 <a href="./assets/files/VillanuevaAlejandroResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <!-- resume link currently points to a placeholder document.  Actual resume needs a bit more touching up at this point. Link opens in a new tab. -->
             </nav>
         </section>
-        <section>
+        <section id="profileSection">
+            <img id="profilePic" src="./assets/images/ProfilePic3.jpg" alt="Profile Picture of Alejandro Villanueva">
             <h2 class="AV">Alejandro Villanueva</h2>
         </section>
     </header>
     
-    <section class="bodyGroup" id="AboutMe">
-        <aside>
-            <h2 class="sectionTitle">About Me</h2>
-        </aside>
-        <section>
-            <p class="AboutMeText sansSerif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales justo quis augue vestibulum, eu gravida lorem tristique. Nullam varius dapibus mi, mattis fermentum sem lobortis a. Nulla velit velit, pulvinar eget sem vel, tincidunt euismod orci. Aliquam varius orci vitae mattis vehicula. Donec iaculis risus vehicula orci euismod, tincidunt porttitor risus auctor. Nam euismod neque nec nisl ullamcorper bibendum. In a ante auctor, mattis nibh elementum, auctor turpis.</p>
-            <p class="AboutMeText sansSerif">Vivamus rhoncus ultrices magna in rhoncus. Integer quis turpis eget massa efficitur euismod. Sed elementum scelerisque eleifend. Mauris vehicula, tortor suscipit faucibus feugiat, libero risus imperdiet nisl, at dignissim justo massa eu velit. Donec lacinia dapibus interdum. Nullam pretium lacus at sodales hendrerit. Sed lacus nisl, interdum at ligula vitae, fringilla eleifend sem. Suspendisse imperdiet dignissim sapien, nec varius eros egestas porttitor.</p>
-        </section>
-    </section>
-    <section class="bodyGroup" id="Work">
-        <aside>
-            <h2 class="sectionTitle">Work</h2>
-        </aside>
-        <!-- placeholder images of Bill Murray from https://www.fillmurray.com/ -->
-        <section id="previousProjects">
-            <section class="projectBucket">
-                <a class="projectCard pinnedProject" href="https://aavillanueva6.github.io/CSSSnippetCheatSheet/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/CSSSnippetCheatsheet-4-1.svg" alt="image of deployed project, showing a collection of CSS code snippets">
-                    <span class="linkText">
-                        <span class="projectText projectName">CSS Snippets</span>
-                        <span class="projectText projectDesc">A collection of CSS Snippets for common styling</span>
-                    </span>
-                </a>
-            <!-- </section>
-            <section class="projectBucket"> -->
-                <a class="projectCard" href="https://aavillanueva6.github.io/CSSSnippetCheatSheet/" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/CSSSnippetCheatsheet-4-1.svg" alt="image of deployed project, showing a collection of CSS code snippets">
-                    <span class="linkText">
-                        <span class="projectText projectName">CSS Snippets</span>
-                        <span class="projectText projectDesc">A collection of CSS Snippets for common styling</span>
-                    </span>
-                </a>
-                <a class="projectCard" href="./assets/files/Placeholder3.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
-                    <span class="linkText">
-                        <span class="projectText projectName">ProjectName3</span>
-                        <span class="projectText projectDesc">ProjectDescription3</span>
-                    </span>
-                </a>
-            <!-- </section>
-            <section class="projectBucket"> -->
-                <a class="projectCard" href="./assets/files/Placeholder4.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
-                    <span class="linkText">
-                        <span class="projectText projectName">ProjectName4</span>
-                        <span class="projectText projectDesc">ProjectDescription4</span>
-                    </span>
-                </a>
-                <a class="projectCard" href="./assets/files/Placeholder5.pdf" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
-                    <span class="linkText">
-                        <span class="projectText projectName">ProjectName5</span>
-                        <span class="projectText projectDesc">ProjectDescription5</span>
-                    </span>
-                </a>
+    
+    <main>
+        <!-- The main contains the #AboutMe, #Work, and #ContactMe sections.  Each is separated by a section and further use classes and ids to apply styling.  -->
+        <section class="bodyGroup" id="AboutMe">
+            <!-- The #AboutMe contains a brief introduction. -->
+            <aside>
+                <h2 class="sectionTitle serif">About Me</h2>
+            </aside>
+            <section>
+                <p class="AboutMeText sansSerif">Alejandro attended Purdue University, where he graduated with a B.S. in Chemical Engineering in 2012.  After completing his degree, he has worked as a Process Engineer in the pharmaceutical industry.  Alejandro has been responsible for managing large-scale projects, and has extensive experience delivering on aggressive timelines.</p>
+                <p class="AboutMeText sansSerif">Since relocating to Seattle in 2019, Alejandro has taken an interest in pursuing a career in Web Development.  While always a Boilermaker at heart, in early 2022 he enrolled in the University of Washington Full Stack Web Development Boot Camp to jumpstart the career change.  When not coding or at work, Alejandro spends most of this time cycling, hiking, and camping in the beautiful Pacific Northwest.  Please see below for a sample of past projects that Alejandro has completed.</p>
             </section>
         </section>
-    </section>
-    <section class="bodyGroup" id="ContactMe">
-        <aside>
-            <h2 class="sectionTitle">Contact Me</h2>
-        </aside>
-        <section class="contactSection">
-            <ul id="contactList">
-                <li>
-                    <a href="tel:+11234567890">123.456.7890</a>
-                </li>
-                <li>
-                    <a href="mailto:aavillanueva6@gmail.com">aavillanueva6@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://github.com/aavillanueva6" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/alejandro-a-villanueva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </li>
-            </ul>
+
+        <section class="bodyGroup" id="Work">
+            <!-- the #Work contains links to previous projects -->
+            <aside>
+                <h2 class="sectionTitle serif">Work</h2>
+            </aside>
+        <!-- placeholder images of Bill Murray from https://www.fillmurray.com/ -->
+        <!-- Each of the previous projects are contained withing the .projectBucket.  This is a flex container that is used to allow for further formatting of the project cards. -->
+        <!-- Each of the .projectCard's is an <a> element that houses an <img> with a 4:1 aspect ratio, and a brief description of the project.  The entire card area (image, and description) are clickable and will open a link to the project in a new tab. -->
+        <!-- The first project has an additional class (.pinnedProject).  This class allows for the project to be spotlighted by forcing it to take an entire row of the flex container. -->
+            <section id="previousProjects">
+                <section class="projectBucket sansSerif">
+                    <a class="projectCard pinnedProject" href="https://aavillanueva6.github.io/gameRockPaperScissors/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/rpsPic-4x1.jpg" alt="image of a rock, a pair of scissors, and a sheet of paper on a wooden background">
+                        <span class="linkText">
+                            <span class="projectText projectName">Rock Paper Scissors</span>
+                            <span class="projectText projectDesc">Using JavaScript to play Rock, Paper, Scissors</span>
+                        </span>
+                    </a>
+
+                    <a class="projectCard" href="https://aavillanueva6.github.io/CSSSnippetCheatSheet/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/CSSSnippetCheatsheet-4-1.png" alt="image of deployed project, showing a collection of CSS code snippets">
+                        <span class="linkText">
+                            <span class="projectText projectName">CSS Snippets</span>
+                            <span class="projectText projectDesc">A collection of CSS Snippets for common styling</span>
+                        </span>
+                    </a>
+<!-- the next three project cards are placeholders for future projects.  They all point to unique placeholder pdfs that are stored in the ./assets/files path. They each contain a placeholder image with a 4:1 aspect ratio.  Placeholder images are from https://www.fillmurray.com/ -->
+                    <a class="projectCard" href="./assets/files/Placeholder3.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                        <span class="linkText">
+                            <span class="projectText projectName">ProjectName3</span>
+                            <span class="projectText projectDesc">ProjectDescription3</span>
+                        </span>
+                    </a>
+
+                    <a class="projectCard" href="./assets/files/Placeholder4.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                        <span class="linkText">
+                            <span class="projectText projectName">ProjectName4</span>
+                            <span class="projectText projectDesc">ProjectDescription4</span>
+                        </span>
+                    </a>
+
+                    <a class="projectCard" href="./assets/files/Placeholder5.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/800x200.jpg" alt="image of Bill Murray">
+                        <span class="linkText">
+                            <span class="projectText projectName">ProjectName5</span>
+                            <span class="projectText projectDesc">ProjectDescription5</span>
+                        </span>
+                    </a>
+                </section>
+            </section>
         </section>
-    </section>
-    <footer>
+
+        <section class="bodyGroup" id="ContactMe">
+            <!-- This section contains contact information for me.  It uses proper formatting for phone, and email links.  Additionally, the links to LinkedIn and GitHub will open in new tabs. -->
+            <aside>
+                <h2 class="sectionTitle serif">Contact Me</h2>
+            </aside>
+            <section class="contactSection sansSerif">
+                <ul id="contactList">
+                    <li>
+                        <a href="tel:+11234567890">123.456.7890</a>
+                        <!-- Placeholder telephone number -->
+                    </li>
+                    <li>
+                        <a href="mailto:aavillanueva6@gmail.com">aavillanueva6@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/aavillanueva6" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/alejandro-a-villanueva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer class="sansSerif">
+        <!-- The footer contains copyright information for the site. -->
         <p>&copy; 2022 Alejandro Villanueva</p>
     </footer>
+
 </body>
 </html>
