@@ -31,9 +31,7 @@
   </head>
   <body>
     <header class="entireHeaderSection sansSerif">
-      <!-- the .entireHeaderSection contains all of the header sections.  A background image is applied to this class in the style.css to have it be distinct -->
       <section class="headerBar">
-        <!-- the .headerBar contains site main title and navigation links to sections in this site, as well as a resume -->
         <h1 class="mainHeaderText">Portfolio</h1>
         <nav>
           <a href="#AboutMe">About Me</a>
@@ -45,7 +43,6 @@
             rel="noopener noreferrer"
             >Resume</a
           >
-          <!-- resume link currently points to a placeholder document.  Actual resume needs a bit more touching up at this point. Link opens in a new tab. -->
         </nav>
       </section>
       <section id="profileSection">
@@ -59,9 +56,7 @@
     </header>
 
     <main>
-      <!-- The main contains the #AboutMe, #Work, and #ContactMe sections.  Each is separated by a section and further use classes and ids to apply styling.  -->
       <section class="bodyGroup" id="AboutMe">
-        <!-- The #AboutMe contains a brief introduction. -->
         <aside>
           <h2 class="sectionTitle serif">About Me</h2>
         </aside>
@@ -87,11 +82,9 @@
       </section>
 
       <section class="bodyGroup" id="Work">
-        <!-- the #Work contains links to previous projects -->
         <aside>
           <h2 class="sectionTitle serif">Work</h2>
         </aside>
-        <!-- placeholder images of Bill Murray from https://www.fillmurray.com/ -->
         <!-- Each of the previous projects are contained withing the .projectBucket.  This is a flex container that is used to allow for further formatting of the project cards. -->
         <!-- Each of the .projectCard's is an <a> element that houses an <img> with a 4:1 aspect ratio, and a brief description of the project.  The entire card area (image, and description) are clickable and will open a link to the project in a new tab. -->
         <!-- The first project has an additional class (.pinnedProject).  This class allows for the project to be spotlighted by forcing it to take an entire row of the flex container. -->
@@ -110,7 +103,7 @@
               <span class="linkText">
                 <span class="projectText projectName">NPS Hike Search</span>
                 <span class="projectText projectDesc"
-                  >Using various APIs to find hikes at US National Parks</span
+                  >Using multiple APIs to find hikes at US National Parks</span
                 >
               </span>
             </a>
@@ -191,7 +184,6 @@
       </section>
 
       <section class="bodyGroup" id="ContactMe">
-        <!-- This section contains contact information for me.  It uses proper formatting for phone, and email links.  Additionally, the links to LinkedIn and GitHub will open in new tabs. -->
         <aside>
           <h2 class="sectionTitle serif">Contact Me</h2>
         </aside>
@@ -226,7 +218,6 @@
       </section>
     </main>
     <footer class="sansSerif">
-      <!-- The footer contains copyright information for the site. -->
       <p>&copy; 2022 Alejandro Villanueva</p>
     </footer>
   </body>
