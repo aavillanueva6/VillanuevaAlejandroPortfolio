@@ -206,6 +206,10 @@ nav a {
 }
 /* font styling for the .projectDesc */
 
+.repoLink {
+  display: inline;
+}
+
 footer {
   display:block;
   background-color: #b4bbc3;
