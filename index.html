@@ -86,7 +86,8 @@
           <h2 class="sectionTitle serif">Work</h2>
         </aside>
         <!-- Each of the previous projects are contained withing the .projectBucket.  This is a flex container that is used to allow for further formatting of the project cards. -->
-        <!-- Each of the .projectCard's is an <a> element that houses an <img> with a 4:1 aspect ratio, and a brief description of the project.  The entire card area (image, and description) are clickable and will open a link to the project in a new tab. -->
+        <!-- Each of the .projectCard's is a <div> element that houses an <img> with a 4:1 aspect ratio, and a brief description of the project.  The entire card area (image, and description) are clickable and will open a link to the project in a new tab. -->
+        <!-- Additionally, a <div> element is added to link to the github repo for each project.  All links in the project cards are handled via click listeners in JS, not the html itself. -->
         <!-- The first project has an additional class (.pinnedProject).  This class allows for the project to be spotlighted by forcing it to take an entire row of the flex container. -->
         <section id="previousProjects">
           <section class="projectBucket sansSerif">
