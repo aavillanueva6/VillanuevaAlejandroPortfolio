@@ -26,14 +26,14 @@
   padding-left: 1rem;
 }
 .customFadeIn, .customFadeOut{
-  transition: 1.5s;
+  transition: 1.0s;
 }
-.fadeInEffect { animation: fadeIn 1.5s; }
+.fadeInEffect { animation: fadeIn 1.0s; }
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.fadeOutEffect { animation: fadeOut 1.5s; }
+.fadeOutEffect { animation: fadeOut 1.0s; }
 @keyframes fadeOut {
   0% { opacity: 1; }
   100% { opacity: 0; }
