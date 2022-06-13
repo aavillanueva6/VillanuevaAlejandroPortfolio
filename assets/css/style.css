@@ -1,0 +1,33 @@
+:root{
+  --primary: #3C4959;
+  --secondary: #747C8C;
+  --light:#F2F2F2;
+  --dark:#252526;
+  --success: #A1A1A6;
+}
+
+.fontSC{
+  font-family: 'Marcellus SC', serif;
+}
+.fontScript-1{
+  font-family: 'Kalam', cursive;
+}
+.fontScript-2{
+  font-family: 'Sriracha', cursive;
+}
+.fontScript-3{
+  font-family: 'Vujahday Script', cursive;
+}
+.fontPrimary{
+  color: var(--primary);
+}
+.px-1rem{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+
+
+.styledWrapper {
+  margin-top:68px
+}

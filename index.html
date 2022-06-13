@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alejandro Villanueva's Portfolio</title>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    /> -->
+
     <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Marcellus+SC&family=Sriracha&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <!-- google fonts -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -39,12 +40,12 @@
     data-bs-target="#navbar-example2"
     data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true"
-    class="scrollspy-example"
+    class="scrollspy-example bg-light"
     tabindex="0"
   >
     <header class="sticky-top">
-      <!-- scrollspy attempt -->
-      <nav id="navbar-example2" class="navbar bg-light px-3">
+      <!-- scrollspy start -->
+      <!-- <nav id="navbar-example2" class="navbar bg-light px-3">
         <a class="navbar-brand" href="#">
           <img
             src="./assets/images/AV_Logo.svg"
@@ -85,20 +86,21 @@
             </ul>
           </li>
         </ul>
-      </nav>
+      </nav> -->
       <!-- scrollspy end -->
       <!-- original start -->
-      <!-- <nav id="scrollspy-nav" class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-light navbar-expand-lg bg-success">
         <div class="container-fluid justify-content-between">
           <a class="navbar-brand" href="#">
             <img
               src="./assets/images/AV_Logo.svg"
               alt="AV logo"
-              width="30"
-              height="30"
+              width="40"
+              height="40"
               class="d-inline-block align-text-top"
+              id="AVLogo"
             />
-            Alejandro Villanueva
+            <span class="fontSC fontPrimary px-1rem">Alejandro Villanueva</span>
           </a>
           <button
             class="navbar-toggler"
@@ -123,304 +125,86 @@
             </div>
           </div>
         </div>
-      </nav> -->
+      </nav>
       <!-- original end -->
     </header>
-
-    <!-- <header class="entireHeaderSection sansSerif">
-      <section class="headerBar">
-        <h1 class="mainHeaderText">Portfolio</h1>
-        <nav>
-          <a href="#AboutMe">About Me</a>
-          <a href="#Work">Work</a>
-          <a href="#ContactMe">Contact Me</a>
-          <a
-            href="./assets/files/VillanuevaAlejandroResume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Resume</a
-          >
-        </nav>
-      </section>
-      <section id="profileSection">
-        <img
-          id="profilePic"
-          src="./assets/images/ProfilePic3.jpg"
-          alt="Profile Picture of Alejandro Villanueva"
-        />
-        <h2 class="AV">Alejandro Villanueva</h2>
-      </section>
-    </header> -->
-
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <h4 id="scrollspyHeading1">First heading</h4>
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <h4 id="scrollspyHeading2">Second heading</h4>
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <h4 id="scrollspyHeading3">Third heading</h4>
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <h4 id="scrollspyHeading4">Fourth heading</h4>
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <h4 id="scrollspyHeading5">Fifth heading</h4>
-    <p>
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-      cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper
-      sit amet ligula. Nulla porttitor accumsan tincidunt. Mauris blandit
-      aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet
-      nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl
-      tempus convallis quis ac lectus. Praesent sapien massa, convallis a
-      pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed porttitor lectus nibh. Donec rutrum
-      congue leo eget malesuada. Donec rutrum congue leo eget malesuada.
-      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-      Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-    </p>
-    <main>
-      <section class="bodyGroup" id="AboutMe">
-        <aside>
-          <h2 class="sectionTitle serif">About Me</h2>
-        </aside>
-        <section>
-          <p class="AboutMeText sansSerif">
-            Alejandro attended Purdue University, where he graduated with a B.S.
-            in Chemical Engineering in 2012. After completing his degree, he has
-            worked as a Process Engineer in the pharmaceutical industry.
-            Alejandro has been responsible for managing large-scale projects,
-            and has extensive experience delivering on aggressive timelines.
-          </p>
-          <p class="AboutMeText sansSerif">
-            Since relocating to Seattle in 2019, Alejandro has taken an interest
-            in pursuing a career in Web Development. While always a Boilermaker
-            at heart, in early 2022 he enrolled in the University of Washington
-            Full Stack Web Development Boot Camp to jumpstart the career change.
-            When not coding or at work, Alejandro spends most of this time
-            cycling, hiking, and camping in the beautiful Pacific Northwest.
-            Please see below for a sample of past projects that Alejandro has
-            completed.
-          </p>
-        </section>
-      </section>
-
-      <section class="bodyGroup" id="Projects">
-        <aside>
-          <h2 class="sectionTitle serif">Work</h2>
-        </aside>
-        <!-- Each of the previous projects are contained withing the .projectBucket.  This is a flex container that is used to allow for further formatting of the project cards. -->
-        <!-- Each of the .projectCard's is a <div> element that houses an <img> with a 4:1 aspect ratio, and a brief description of the project.  The entire card area (image, and description) are clickable and will open a link to the project in a new tab. -->
-        <!-- Additionally, a <div> element is added to link to the github repo for each project.  All links in the project cards are handled via click listeners in JS, not the html itself. -->
-        <!-- The first project has an additional class (.pinnedProject).  This class allows for the project to be spotlighted by forcing it to take an entire row of the flex container. -->
-        <section id="previousProjects">
-          <section class="projectBucket sansSerif">
-            <div
-              class="projectCard pinnedProject"
-              data-link="https://aavillanueva6.github.io/NPSHikeSearchTool/"
-            >
-              <img
-                src="./assets/images/NPSHikeSearchTool-4x1.jpg"
-                alt="Image of Grand Teton National Park with mountains behind a lake"
-              />
-              <span class="linkText">
-                <span class="projectText projectName">NPS Hike Search</span>
-                <span class="projectText projectDesc"
-                  >Using multiple APIs to find hikes at US National Parks<br />
-                  <div
-                    class="projectText repoLink"
-                    data-link="https://github.com/aavillanueva6/NPSHikeSearchTool"
-                  >
-                    Link to Github repository
-                  </div></span
-                >
-              </span>
-            </div>
-
-            <div
-              class="projectCard"
-              data-link="https://aavillanueva6.github.io/WeatherDashboard/"
-            >
-              <img
-                src="./assets/images/WeatherDashboard-4x1.png"
-                alt="Image of stormy weather in front of a cliff"
-              />
-              <span class="linkText">
-                <span class="projectText projectName">Weather Dashboard</span>
-                <span class="projectText projectDesc"
-                  >Application to provide weather data for a searched city<br />
-                  <div
-                    class="projectText repoLink"
-                    data-link="https://github.com/aavillanueva6/WeatherDashboard"
-                  >
-                    Link to Github repository
-                  </div></span
-                >
-              </span>
-            </div>
-
-            <div
-              class="projectCard"
-              data-link="https://aavillanueva6.github.io/passwordGenerator/"
-            >
-              <img
-                src="./assets/images/passwordGenerator-4x1.png"
-                alt="Image of lock to symbolize secure password"
-              />
-              <!-- lock image is from https://martech.org/wp-content/uploads/2014/08/lock-privacy-security-ss-1920.jpg -->
-              <span class="linkText">
-                <span class="projectText projectName">Password Generator</span>
-                <span class="projectText projectDesc"
-                  >Uses JavaScript to generate a complex password<br />
-                  <div
-                    class="projectText repoLink"
-                    data-link="https://github.com/aavillanueva6/passwordGenerator"
-                  >
-                    Link to Github repository
-                  </div></span
-                >
-              </span>
-            </div>
-            <div
-              class="projectCard"
-              data-link="https://aavillanueva6.github.io/gameRockPaperScissors/"
-            >
-              <img
-                src="./assets/images/rpsPic-4x1.jpg"
-                alt="image of a rock, a pair of scissors, and a sheet of paper on a wooden background"
-              />
-              <span class="linkText">
-                <span class="projectText projectName">Rock Paper Scissors</span>
-                <span class="projectText projectDesc">
-                  Using JavaScript to play Rock, Paper, Scissors
-                  <br />
-                  <div
-                    class="projectText repoLink"
-                    data-link="https://github.com/aavillanueva6/gameRockPaperScissors"
-                  >
-                    Link to Github repository
-                  </div></span
-                >
-              </span>
-            </div>
-
-            <div
-              class="projectCard"
-              data-link="https://aavillanueva6.github.io/CSSSnippetCheatSheet/"
-            >
-              <img
-                src="./assets/images/CSSSnippetCheatsheet-4-1.png"
-                alt="image of deployed project, showing a collection of CSS code snippets"
-              />
-              <span class="linkText">
-                <span class="projectText projectName">CSS Snippets</span>
-                <span class="projectText projectDesc"
-                  >A collection of CSS Snippets for common styling<br />
-                  <div
-                    class="projectText repoLink"
-                    data-link="https://github.com/aavillanueva6/CSSSnippetCheatSheet"
-                  >
-                    Link to Github repository
-                  </div></span
-                >
-              </span>
-            </div>
-          </section>
-        </section>
-      </section>
-
-      <section class="bodyGroup" id="ContactMe">
-        <aside>
-          <h2 class="sectionTitle serif">Contact Me</h2>
-        </aside>
-        <section class="contactSection sansSerif">
-          <ul id="contactList">
-            <li>
-              <a href="tel:+15742107562">574.210.7562</a>
-            </li>
-            <li>
-              <a href="mailto:aavillanueva6@gmail.com"
-                >aavillanueva6@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/aavillanueva6"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/alejandro-a-villanueva/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
-        </section>
-      </section>
-    </main>
-    <footer class="sansSerif">
-      <p>&copy; 2022 Alejandro Villanueva</p>
+    <div class="container-fluid py-5 bg-dark">
+      <div class="row">
+        <h1 class="display-5 fw-bold fontSC text-light">
+          Alejandro
+        </h1>
+      </div class="row">
+      <div class="row">
+      <h1 class="display-5 fw-bold fontSC text-light mt-n4">
+        Villanueva
+      </h1>
+    </div>
+      <p class="col-md-8 fs-4 text-secondary">
+        I'm a Full-Stack Web Developer. <br>
+        //Add some more flavorful text here//
+      </p>
+    </div>
+    <div id="Projects" class="container">
+      <div class="row">
+        <h1 class="display-5 fw-bold fontScript-3 text-primary">
+          Projects:
+        </h1>
+      </div>
+    </div>
+    <div id="AboutMe" class="container">
+      <div class="row">
+        <h1 class="display-5 fw-bold fontScript-3 text-primary">
+          About Me:
+        </h1>
+      </div>
+    </div>
+    <div id="ContactMe" class="container">
+      <div class="row">
+        <h1 class="display-5 fw-bold fontScript-3 text-primary">
+          Contact Me:
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingName"
+              placeholder="Name"
+            />
+            <label for="floatingName">Name</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <label for="contactMeForm" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="contactFormTextArea"
+            rows="4"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-auto mt-2">
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <hr class="text-primary border-2 opacity-50" />
+    <footer class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">&copy; 2022 Alejandro Villanueva</div>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

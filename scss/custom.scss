@@ -28,6 +28,7 @@ $secondary: #747C8C;
 $light:#F2F2F2;
 $dark:#252526;
 $success: #A1A1A6;
+$enable-negative-margins: true;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -40,7 +41,6 @@ $theme-colors: (
   "dark": $dark,
   "success": $success
 );
-// $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Include remainder of required parts
 @import "bootstrap/scss/functions"; // Required
@@ -86,3 +86,4 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+// @import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
