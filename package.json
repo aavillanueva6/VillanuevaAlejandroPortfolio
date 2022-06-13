@@ -1,0 +1,46 @@
+{
+  "name": "villanuevaalejandroportfolio",
+  "version": "1.0.0",
+  "description": "This project holds links to relevant projects that I have completed, as well as holds links to my professional social media, and resume.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run css",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "css-lint": "stylelint scss/",
+    "css-prefix": "postcss --replace assets/css/custom.css --use autoprefixer --map",
+    "css-purge": "purgecss --keyframes --css assets/css/custom.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "css": "npm-run-all css-compile css-prefix css-purge",
+    "server": "serve --listen 3000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss -x \"npm run css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aavillanueva6/VillanuevaAlejandroPortfolio.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aavillanueva6/VillanuevaAlejandroPortfolio/issues"
+  },
+  "homepage": "https://github.com/aavillanueva6/VillanuevaAlejandroPortfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "purgecss": "^4.1.3",
+    "serve": "^13.0.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-twbs-bootstrap": "^4.0.0"
+  }
+}
