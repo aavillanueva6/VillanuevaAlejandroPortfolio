@@ -30,7 +30,7 @@
       sizes="16x16"
       href="./assets/images/favicon/favicon-16x16.svg"
     />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <!-- <link rel="manifest" href="./assets/images/favicon/site.webmanifest" /> -->
     <!-- 
         manifest "site.manifest" modified from version provided by https://favicon.io/favicon-generator/ 
     -->
@@ -43,53 +43,9 @@
     class="scrollspy-example bg-light"
     tabindex="0"
   >
-    <header class="sticky-top">
-      <!-- scrollspy start -->
-      <!-- <nav id="navbar-example2" class="navbar bg-light px-3">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/images/AV_Logo.svg"
-            alt="AV logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top"
-          />
-          Alejandro Villanueva
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-expanded="false"
-              >Dropdown</a
-            >
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav> -->
-      <!-- scrollspy end -->
-      <!-- original start -->
-      <nav class="navbar navbar-light navbar-expand-lg bg-success">
+    <header class="sticky-top bg-dark">
+  
+      <nav class="navbar navbar-light navbar-expand-lg bg-success invisible customFadeIn">
         <div class="container-fluid justify-content-between">
           <a class="navbar-brand" href="#">
             <img
@@ -100,7 +56,7 @@
               class="d-inline-block align-text-top"
               id="AVLogo"
             />
-            <span class="fontSC fontPrimary px-1rem">Alejandro Villanueva</span>
+            <span class="fontSC fontPrimary px-1rem" id="headerName">Alejandro Villanueva</span>
           </a>
           <button
             class="navbar-toggler"
@@ -126,7 +82,6 @@
           </div>
         </div>
       </nav>
-      <!-- original end -->
     </header>
     <div class="container-fluid py-5 bg-dark">
       <div class="row">
@@ -143,12 +98,25 @@
         I'm a Full-Stack Web Developer. <br>
         //Add some more flavorful text here//
       </p>
+      <div class="container">
+        <div class="row justify-content-between customFadeOut" role="group" aria-label="Basic outlined example">
+          <a href="#Projects" role="button" class="btn btn-outline-light col-auto">Projects</a>
+          
+          <a href="#AboutMe" role="button" class="btn btn-outline-light col-auto">About</a>
+          <a href="#ContactMe" role="button" class="btn btn-outline-light col-auto">Contact</a>
+        </div>
+      </div>
     </div>
     <div id="Projects" class="container">
       <div class="row">
         <h1 class="display-5 fw-bold fontScript-3 text-primary">
           Projects:
         </h1>
+        <p>Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+
+          Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit.
+          
+          Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada.</p>
       </div>
     </div>
     <div id="AboutMe" class="container">
@@ -156,6 +124,11 @@
         <h1 class="display-5 fw-bold fontScript-3 text-primary">
           About Me:
         </h1>
+        <p>Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
+
+          Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit.
+          
+          Pellentesque in ipsum id orci porta dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada.</p>
       </div>
     </div>
     <div id="ContactMe" class="container">
@@ -203,7 +176,7 @@
     <hr class="text-primary border-2 opacity-50" />
     <footer class="container">
       <div class="row justify-content-center">
-        <div class="col-auto">&copy; 2022 Alejandro Villanueva</div>
+        <div class="col-auto">&copy; 2022 Alejandro Villanueva<span class="visible invisible"></span></div>
       </div>
     </footer>
     <script

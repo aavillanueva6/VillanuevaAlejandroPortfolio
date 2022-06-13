@@ -14,16 +14,26 @@
 //   });
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// window.onscroll = function () {
-//   scrollFunction();
-// };
+window.onscroll = function () {
+  scrollFunction();
+};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
-//     document.getElementById('scrollspy-nav').style.padding = '8px 0px';
-//     document.getElementById('AVLogo').style.fontSize = '25px';
-//   } else {
-//     document.getElementById('scrollspy-nav').style.padding = '80px 10px';
-//     document.getElementById('AVLogo').style.fontSize = '45px';
-//   }
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+    document
+      .querySelector('.customFadeIn')
+      .classList.remove('invisible', 'fadeOutEffect');
+    document.querySelector('.customFadeIn').classList.add('fadeInEffect');
+    document.querySelector('.customFadeOut').classList.add('invisible');
+    document.querySelector('.customFadeOut').classList.add('fadeOutEffect');
+    document.querySelector('.customFadeOut').classList.remove('fadeInEffect');
+  } else {
+    document.querySelector('.customFadeIn').classList.add('invisible');
+    document.querySelector('.customFadeIn').classList.add('fadeOutEffect');
+    document.querySelector('.customFadeIn').classList.remove('fadeInEffect');
+    document
+      .querySelector('.customFadeOut')
+      .classList.remove('invisible', 'fadeOutEffect');
+    document.querySelector('.customFadeOut').classList.add('fadeInEffect');
+  }
+}
