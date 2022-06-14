@@ -27,23 +27,28 @@
       rel="stylesheet"
     />
     <!-- google fonts -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"
+    ></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
+      href="./assets/images/icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.svg"
+      href="./assets/images/icons/favicon-32x32.svg"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/images/favicon/favicon-16x16.svg"
+      href="./assets/images/icons/favicon-16x16.svg"
     />
+    <link rel="manifest" href="./assets/files/manifest.json" />
     <!-- <link rel="manifest" href="./assets/images/favicon/site.webmanifest" /> -->
     <!-- 
         manifest "site.manifest" modified from version provided by https://favicon.io/favicon-generator/ 
@@ -379,7 +384,8 @@
               </div>
             </div>
             <div class="col-md-6">
-              <iframe
+              <lite-youtube videoid="NtHvQKAxLkw"></lite-youtube>
+              <!-- <iframe
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/NtHvQKAxLkw"
@@ -387,7 +393,7 @@
                 frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-              ></iframe>
+              ></iframe> -->
             </div>
           </div>
         </div>
@@ -702,6 +708,7 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="./src/lite-yt-embed.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
