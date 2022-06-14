@@ -44,11 +44,11 @@
 .codeIcon{
   font-size: 2.5rem;
 }
-.card-img-overlay{
+.projCardImg{
 
-  transition: 1s;
+  transition: 750ms;
 }
-.card-img-overlay:hover{
-  opacity: 0.5 !important;
+.projCardImg:hover{
+  opacity: 0.4 !important;
 
 }
