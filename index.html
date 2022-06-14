@@ -56,7 +56,7 @@
         <div class="container-fluid justify-content-between">
           <a class="navbar-brand" href="#">
             <img
-              src="./assets/images/AV_Logo.svg"
+              src="./assets/images/logo/AV_Logo.svg"
               alt="AV logo"
               width="40"
               height="40"
@@ -86,7 +86,6 @@
               <a class="nav-link" href="#Projects">Projects</a>
               <a class="nav-link" href="#AboutMe">About Me</a>
               <a class="nav-link" href="#ContactMe">Contact Me</a>
-              <a class="nav-link disabled">Disabled</a>
             </div>
           </div>
         </div>
@@ -95,28 +94,33 @@
     <div class="container-fluid vh-100 py-5 bg-dark align-content-center">
       <div class="row align-content-center h-100">
         <div class="container-fluid">
-          <!-- <div class="row justify-content-start"> -->
-          <!-- <img
-            src="./assets/images/AV_Logo_Light.svg"
-            alt="AV logo"
-            width="140"
-            height="140"
-            class="d-block pb-5"
-            id="AVLogo"
-          /> -->
-          <!-- </div> -->
           <div class="row">
-            <h1 class="display-5 fw-bold fontSC text-light">Alejandro</h1>
+            <div class="col-8">
+              <div class="row align-items-end">
+                <h1 class="display-5 fw-bold fontSC text-light">Alejandro</h1>
+              </div>
+              <div class="row align-items-end">
+                <h1 class="display-5 fw-bold fontSC text-light mt-n4">
+                  Villanueva
+                </h1>
+              </div>
+              <p class="col-md-8 fs-4 text-secondary">
+                I'm a Full-Stack Web Developer. <br />
+                //Add some more flavorful text here//
+              </p>
+            </div>
+            <div class="col-4">
+              <img
+                src="./assets/images/logo/AV_Logo_Light.svg"
+                alt="AV logo"
+                width="140"
+                height="140"
+                class="d-block customFadeOut"
+                id="AVLogo"
+              />
+            </div>
           </div>
-          <div class="row">
-            <h1 class="display-5 fw-bold fontSC text-light mt-n4">
-              Villanueva
-            </h1>
-          </div>
-          <p class="col-md-8 fs-4 text-secondary">
-            I'm a Full-Stack Web Developer. <br />
-            //Add some more flavorful text here//
-          </p>
+
           <div class="container-fluid">
             <div
               class="row justify-content-evenly customFadeOut"
@@ -151,45 +155,6 @@
       <div class="row">
         <h1 class="display-5 fw-bold fontScript-3 text-primary">Projects:</h1>
       </div>
-      <!-- <div class="row">
-        <div class="card bg-secondary text-light">
-          <img
-            src="./assets/images/move_cropped.png"
-            class="card-img opacity-25"
-            alt="..."
-          />
-          <div class="card-img-overlay opacity-75 bg-dark">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">Last updated 3 mins ago</p>
-          </div>
-          <div class="card-body container-fluid">
-            <h5 class="card-title row">Tech Stack</h5>
-            <div class="row">
-              <div class="col-6">
-                <h6 class="card-title row align-text-center">Front End</h6>
-                <i class="devicon-bootstrap-plain codeIcon"></i>
-                <i class="devicon-javascript-plain codeIcon"></i>
-                <i class="devicon-handlebars-plain codeIcon"></i>
-                <i class="devicon-css3-plain codeIcon"></i>
-              </div>
-              <div class="col-6">
-                <h6 class="card-title row">Back End</h6>
-                <i class="devicon-mysql-plain codeIcon"></i>
-                <i class="devicon-sequelize-plain codeIcon"></i>
-
-                <i class="devicon-nodejs-plain codeIcon"></i>
-                <i class="devicon-express-original codeIcon"></i>
-                <i class="devicon-socketio-original codeIcon"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="row">
         <div class="card my-2 bg-dark text-center text-light">
           <div class="card-header fontScript-2 fs-1">move</div>
@@ -197,7 +162,7 @@
             <h5 class="card-title fs-5">Outdoor activity forum</h5>
 
             <img
-              src="./assets/images/move_cropped.png"
+              src="./assets/images/projects/move_cropped.png"
               class="card-img-bottom projCardImg"
               alt="..."
             />
@@ -263,13 +228,166 @@
       </div>
       <div class="row">
         <div class="card my-2 pb-2 bg-dark text-center text-light">
+          <div class="card-header fontScript-2 fs-1">Technology Blog</div>
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img
+                src="./assets/images/projects/techBlog.png"
+                class="img-fluid rounded-start projCardImg"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text fst-italic fs-6">
+                  Note: This app is hosted on a free Heroku tier. Please allow a
+                  few moments to spin up.
+                </p>
+                <a
+                  href="https://aav-tech-blog.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Deployed App</a
+                >
+                <a
+                  href="https://github.com/aavillanueva6/TechBlog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Github Repo</a
+                >
+                <div class="card-footer text-light">
+                  <h5 class="card-title text-center">Tech Stack</h5>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row justify-content-evenly">
+                        <div
+                          class="card bg-transparent border-light mb-3"
+                          style="max-width: 18rem"
+                        >
+                          <div class="card-header">Front End</div>
+                          <div class="card-body">
+                            <i class="devicon-bulma-plain codeIcon"></i>
+                            <i class="devicon-javascript-plain codeIcon"></i>
+                            <i class="devicon-handlebars-plain codeIcon"></i>
+                            <i class="devicon-css3-plain codeIcon"></i>
+                            <i class="devicon-sass-original codeIcon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="row justify-content-evenly">
+                        <div
+                          class="card bg-transparent border-light mb-3"
+                          style="max-width: 18rem"
+                        >
+                          <div class="card-header">Back End</div>
+                          <div class="card-body">
+                            <i class="devicon-mysql-plain codeIcon"></i>
+                            <i class="devicon-sequelize-plain codeIcon"></i>
+                            <i class="devicon-nodejs-plain codeIcon"></i>
+                            <i class="devicon-express-original codeIcon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card my-2 pb-2 bg-dark text-center text-light">
+          <div class="card-header fontScript-2 fs-1">e-Commerce Back End</div>
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <!-- <p class="card-text fst-italic fs-6">
+                  Note: App is deployed on a free version of Heroku. Please
+                  allow a few moments for page to load.
+                </p> -->
+                <a
+                  href="https://www.youtube.com/watch?v=NtHvQKAxLkw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Video Demo</a
+                >
+                <a
+                  href="https://github.com/aavillanueva6/ECommerceBackEnd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Github Repo</a
+                >
+                <div class="card-footer text-light">
+                  <h5 class="card-title text-center">Tech Stack</h5>
+                  <div class="row justify-content-evenly">
+                    <!-- <div class="col-6">
+                      <div class="row justify-content-evenly">
+                        <div
+                          class="card bg-transparent border-light mb-3"
+                          style="max-width: 18rem"
+                        >
+                          <div class="card-header">Front End</div>
+                          <div class="card-body">
+                            <i class="devicon-bootstrap-plain codeIcon"></i>
+                            <i class="devicon-javascript-plain codeIcon"></i>
+                            <i class="devicon-handlebars-plain codeIcon"></i>
+                            <i class="devicon-css3-plain codeIcon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <div class="col-6">
+                      <div class="row justify-content-evenly">
+                        <div
+                          class="card bg-transparent border-light mb-3"
+                          style="max-width: 18rem"
+                        >
+                          <div class="card-header">Back End</div>
+                          <div class="card-body">
+                            <i class="devicon-mysql-plain codeIcon"></i>
+                            <i class="devicon-sequelize-plain codeIcon"></i>
+                            <i class="devicon-nodejs-plain codeIcon"></i>
+                            <i class="devicon-express-original codeIcon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NtHvQKAxLkw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card my-2 pb-2 bg-dark text-center text-light">
           <div class="card-header fontScript-2 fs-1">
             National Park Service Hike Search
           </div>
           <div class="row g-0">
             <div class="col-md-6">
               <img
-                src="./assets/images/NPSHikeSearchTool.png"
+                src="./assets/images/projects/NPSHikeSearchTool.png"
                 class="img-fluid rounded-start projCardImg"
                 alt="..."
               />
@@ -333,26 +451,27 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="card my-2 pb-2 bg-dark text-center text-light">
-          <div class="card-header fontScript-2 fs-1">Project Name</div>
+          <div class="card-header fontScript-2 fs-1">Weather Dashboard</div>
           <div class="row g-0">
             <div class="col-md-6">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text fst-italic fs-6">
-                  Note: App is deployed on a free version of Heroku. Please
-                  allow a few moments for page to load.
-                </p>
+                <!-- <p class="card-text fst-italic fs-6">
+                  Note: This app is hosted on a free Heroku tier. Please allow a
+                  few moments to spin up.
+                </p> -->
                 <a
-                  href="https://uwb-move.herokuapp.com/"
+                  href="https://aavillanueva6.github.io/WeatherDashboard/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary"
                   >Deployed App</a
                 >
                 <a
-                  href="https://github.com/aavillanueva6/Move"
+                  href="https://github.com/aavillanueva6/WeatherDashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn btn-primary"
@@ -360,7 +479,7 @@
                 >
                 <div class="card-footer text-light">
                   <h5 class="card-title text-center">Tech Stack</h5>
-                  <div class="row">
+                  <div class="row justify-content-evenly">
                     <div class="col-6">
                       <div class="row justify-content-evenly">
                         <div
@@ -371,13 +490,13 @@
                           <div class="card-body">
                             <i class="devicon-bootstrap-plain codeIcon"></i>
                             <i class="devicon-javascript-plain codeIcon"></i>
-                            <i class="devicon-handlebars-plain codeIcon"></i>
+                            <i class="devicon-html5-plain codeIcon"></i>
                             <i class="devicon-css3-plain codeIcon"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <!-- <div class="col-6">
                       <div class="row justify-content-evenly">
                         <div
                           class="card bg-transparent border-light mb-3"
@@ -394,166 +513,14 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <img
-                src="./assets/images/move.png"
-                class="img-fluid rounded-start projCardImg"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card my-2 pb-2 bg-dark text-center text-light">
-          <div class="card-header fontScript-2 fs-1">Project Name</div>
-          <div class="row g-0">
-            <div class="col-md-6">
-              <img
-                src="./assets/images/move.png"
-                class="img-fluid rounded-start projCardImg"
-                alt="..."
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text fst-italic fs-6">
-                  Note: App is deployed on a free version of Heroku. Please
-                  allow a few moments for page to load.
-                </p>
-                <a
-                  href="https://uwb-move.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Deployed App</a
-                >
-                <a
-                  href="https://github.com/aavillanueva6/Move"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Github Repo</a
-                >
-                <div class="card-footer text-light">
-                  <h5 class="card-title text-center">Tech Stack</h5>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="row justify-content-evenly">
-                        <div
-                          class="card bg-transparent border-light mb-3"
-                          style="max-width: 18rem"
-                        >
-                          <div class="card-header">Front End</div>
-                          <div class="card-body">
-                            <i class="devicon-bootstrap-plain codeIcon"></i>
-                            <i class="devicon-javascript-plain codeIcon"></i>
-                            <i class="devicon-handlebars-plain codeIcon"></i>
-                            <i class="devicon-css3-plain codeIcon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="row justify-content-evenly">
-                        <div
-                          class="card bg-transparent border-light mb-3"
-                          style="max-width: 18rem"
-                        >
-                          <div class="card-header">Back End</div>
-                          <div class="card-body">
-                            <i class="devicon-mysql-plain codeIcon"></i>
-                            <i class="devicon-sequelize-plain codeIcon"></i>
-
-                            <i class="devicon-nodejs-plain codeIcon"></i>
-                            <i class="devicon-express-original codeIcon"></i>
-                            <i class="devicon-socketio-original codeIcon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card my-2 pb-2 bg-dark text-center text-light">
-          <div class="card-header fontScript-2 fs-1">Project Name</div>
-          <div class="row g-0">
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text fst-italic fs-6">
-                  Note: App is deployed on a free version of Heroku. Please
-                  allow a few moments for page to load.
-                </p>
-                <a
-                  href="https://uwb-move.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Deployed App</a
-                >
-                <a
-                  href="https://github.com/aavillanueva6/Move"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Github Repo</a
-                >
-                <div class="card-footer text-light">
-                  <h5 class="card-title text-center">Tech Stack</h5>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="row justify-content-evenly">
-                        <div
-                          class="card bg-transparent border-light mb-3"
-                          style="max-width: 18rem"
-                        >
-                          <div class="card-header">Front End</div>
-                          <div class="card-body">
-                            <i class="devicon-bootstrap-plain codeIcon"></i>
-                            <i class="devicon-javascript-plain codeIcon"></i>
-                            <i class="devicon-handlebars-plain codeIcon"></i>
-                            <i class="devicon-css3-plain codeIcon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="row justify-content-evenly">
-                        <div
-                          class="card bg-transparent border-light mb-3"
-                          style="max-width: 18rem"
-                        >
-                          <div class="card-header">Back End</div>
-                          <div class="card-body">
-                            <i class="devicon-mysql-plain codeIcon"></i>
-                            <i class="devicon-sequelize-plain codeIcon"></i>
-
-                            <i class="devicon-nodejs-plain codeIcon"></i>
-                            <i class="devicon-express-original codeIcon"></i>
-                            <i class="devicon-socketio-original codeIcon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./assets/images/move.png"
+                src="./assets/images/projects/weatherDashboard.png"
                 class="img-fluid rounded-start projCardImg"
                 alt="..."
               />
@@ -566,16 +533,64 @@
       <div class="row">
         <h1 class="display-5 fw-bold fontScript-3 text-primary">About Me:</h1>
         <p>
-          Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat,
-          accumsan id imperdiet et, porttitor at sem. Donec sollicitudin
-          molestie malesuada. Pellentesque in ipsum id orci porta dapibus.
-          Vivamus magna justo, lacinia eget consectetur sed, convallis at
-          tellus. Praesent sapien massa, convallis a pellentesque nec, egestas
-          non nisi. Cras ultricies ligula sed magna dictum porta. Curabitur
-          aliquet quam id dui posuere blandit. Pellentesque in ipsum id orci
-          porta dapibus. Pellentesque in ipsum id orci porta dapibus. Nulla
-          porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada.
+          I'm a Full-Stack Developer with a background in Chemical Engineering.
+          I have always been interested in technology, and decided to leverage
+          my engineering background in a new way to complete a Full-Stack Web
+          Development Boot Camp through the University of Washington.
         </p>
+        <p>
+          When I am not coding, you can catch me camping, hiking, or cycling.
+        </p>
+      </div>
+      <div class="row">
+        <h5 class="card-title text-center">Tech Stack</h5>
+        <div class="row text-light justify-content-evenly">
+          <div class="col-3">
+            <div class="row justify-content-evenly">
+              <div class="card bg-dark mb-3">
+                <div class="card-header">Front End</div>
+                <div class="card-body">
+                  <i class="devicon-bootstrap-plain-wordmark codeIcon"></i>
+                  <i class="devicon-javascript-plain codeIcon"></i>
+                  <i class="devicon-handlebars-plain-wordmark codeIcon"></i>
+                  <i class="devicon-css3-plain-wordmark codeIcon"></i>
+                  <i class="devicon-html5-plain-wordmark codeIcon"></i>
+                  <i class="devicon-sass-original codeIcon"></i>
+                  <i class="devicon-bulma-plain codeIcon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row justify-content-evenly">
+              <div class="card bg-dark mb-3">
+                <div class="card-header">Back End</div>
+                <div class="card-body">
+                  <i class="devicon-express-original-wordmark codeIcon"></i>
+                  <i class="devicon-mysql-plain-wordmark codeIcon"></i>
+                  <i class="devicon-nodejs-plain-wordmark codeIcon"></i>
+                  <i class="devicon-sequelize-plain-wordmark codeIcon"></i>
+                  <i class="devicon-socketio-original-wordmark codeIcon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row justify-content-evenly">
+              <div class="card bg-dark mb-3">
+                <div class="card-header">Tools</div>
+                <div class="card-body">
+                  <i class="devicon-bash-plain codeIcon"></i>
+                  <i class="devicon-git-plain-wordmark codeIcon"></i>
+                  <i class="devicon-heroku-original-wordmark codeIcon"></i>
+                  <i class="devicon-jest-plain codeIcon"></i>
+                  <i class="devicon-npm-original-wordmark codeIcon"></i>
+                  <i class="devicon-vscode-plain-wordmark codeIcon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="ContactMe" class="container">

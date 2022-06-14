@@ -19,21 +19,28 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+  const fadeIn = document.querySelectorAll('.customFadeIn');
+  const fadeOut = document.querySelectorAll('.customFadeOut');
+
   if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
-    document
-      .querySelector('.customFadeIn')
-      .classList.remove('invisible', 'fadeOutEffect');
-    document.querySelector('.customFadeIn').classList.add('fadeInEffect');
-    document.querySelector('.customFadeOut').classList.add('invisible');
-    document.querySelector('.customFadeOut').classList.add('fadeOutEffect');
-    document.querySelector('.customFadeOut').classList.remove('fadeInEffect');
+    for (el of fadeIn) {
+      el.classList.remove('invisible', 'fadeOutEffect');
+      el.classList.add('fadeInEffect');
+    }
+    for (el of fadeOut) {
+      el.classList.add('invisible');
+      el.classList.add('fadeOutEffect');
+      el.classList.remove('fadeInEffect');
+    }
   } else {
-    document.querySelector('.customFadeIn').classList.add('invisible');
-    document.querySelector('.customFadeIn').classList.add('fadeOutEffect');
-    document.querySelector('.customFadeIn').classList.remove('fadeInEffect');
-    document
-      .querySelector('.customFadeOut')
-      .classList.remove('invisible', 'fadeOutEffect');
-    document.querySelector('.customFadeOut').classList.add('fadeInEffect');
+    for (el of fadeIn) {
+      el.classList.add('invisible');
+      el.classList.add('fadeOutEffect');
+      el.classList.remove('fadeInEffect');
+    }
+    for (el of fadeOut) {
+      el.classList.remove('invisible', 'fadeOutEffect');
+      el.classList.add('fadeInEffect');
+    }
   }
 }
