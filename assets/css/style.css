@@ -1,0 +1,48 @@
+:root{
+  --primary: #3C4959;
+  --secondary: #747C8C;
+  --light:#F2F2F2;
+  --dark:#252526;
+  --success: #A1A1A6;
+}
+.fontSC{
+  font-family: 'Marcellus SC', serif;
+}
+.fontScript-1{
+  font-family: 'Kalam', cursive;
+}
+.fontScript-2{
+  font-family: 'Sriracha', cursive;
+}
+.fontScript-3{
+  font-family: 'Vujahday Script', cursive;
+}
+.fontPrimary{
+  color: var(--primary);
+}
+.px-1rem{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.customFadeIn, .customFadeOut{
+  transition: 1.0s;
+}
+.fadeInEffect { animation: fadeIn 1.0s; }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.fadeOutEffect { animation: fadeOut 1.0s; }
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.codeIcon{
+  font-size: 2.5rem;
+}
+.projCardImg{
+  transition: 750ms;
+}
+.projCardImg:hover{
+  opacity: 0.4 !important;
+}
