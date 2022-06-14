@@ -5,7 +5,6 @@
   --dark:#252526;
   --success: #A1A1A6;
 }
-
 .fontSC{
   font-family: 'Marcellus SC', serif;
 }
@@ -38,17 +37,12 @@
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
-/* .styledWrapper {
-  margin-top:68px
-} */
 .codeIcon{
   font-size: 2.5rem;
 }
 .projCardImg{
-
   transition: 750ms;
 }
 .projCardImg:hover{
   opacity: 0.4 !important;
-
 }
