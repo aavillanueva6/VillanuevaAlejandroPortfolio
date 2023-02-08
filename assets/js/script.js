@@ -55,8 +55,10 @@ contFormSubmitBtn.addEventListener('click', function () {
   // check that form is complete
   if (contFormName && contFormEmail && contFormMessage) {
     // format user form input into JSON
-    let formData = { contFormName, contFormEmail, contFormMessage };
-    JSON.stringify(formData);
+    let formData = new FormData();
+    formData.append('name', contFormName);
+    formData.append('email', contFormEmail);
+    formData.append('message', contFormMessage);
     // HTTP request to getform.io for the form
     fetch('https://getform.io/f/d8174328-3f07-4910-abbf-03c54df2e0e4', {
       method: 'POST',
