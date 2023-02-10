@@ -52,6 +52,7 @@ contFormSubmitBtn.addEventListener('click', function () {
   let contFormName = document.getElementById('floatingName').value;
   let contFormEmail = document.getElementById('floatingInput').value;
   let contFormMessage = document.getElementById('contactFormTextArea').value;
+
   // check that form is complete
   if (contFormName && contFormEmail && contFormMessage) {
     // format user form input into JSON
@@ -74,5 +75,8 @@ contFormSubmitBtn.addEventListener('click', function () {
     document.getElementById('floatingName').value = '';
     document.getElementById('floatingInput').value = '';
     document.getElementById('contactFormTextArea').value = '';
+    // disable the submit button after successful form submission
+    contFormSubmitBtn.disabled = true;
+    contFormSubmitBtn.textContent = 'Thank you for reaching out';
   }
 });
